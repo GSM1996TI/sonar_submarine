@@ -1,83 +1,56 @@
-# sonar_submarine
-#  SUBMARINE Radar Project - Cold War UI in Java Swing 
+Radar do Submarino - Crise dos Mísseis de Cuba
+Este projeto Java simula um radar de submarino clássico com uma interface gráfica simples, inspirada no contexto tenso da Crise dos Mísseis de Cuba. O objetivo é visualizar o feixe de um sonar varrendo uma área, buscando por potenciais alvos ou mapeando o ambiente submarino.
 
-## Overview
+Contexto Histórico: Crise dos Mísseis de Cuba
+A Crise dos Mísseis de Cuba (Outubro de 1962) foi um dos momentos mais perigosos da Guerra Fria, quando os Estados Unidos e a União Soviética se confrontaram devido à instalação de mísseis nucleares soviéticos em Cuba. Submarinos desempenharam um papel crucial nesse cenário, operando furtivamente com seus sonares para detectar navios e outros submarinos, tornando a precisão e a eficiência de seus radares vitais para a segurança nacional. Este projeto busca evocar essa atmosfera de vigilância constante sob as ondas.
 
-This project is a demonstration of a radar User Interface (UI), inspired by classic submarine displays from the Cold War era. Developed in **Java Swing**, it features a rotating scanning beam, concentric rings, and grid lines, simulating an active radar in real-time.
+Funcionalidades
+Interface Gráfica Simples: Desenvolvido com Java Swing para uma visualização clara e funcional.
 
-The primary goal of this project is to solidify fundamental Java programming concepts, Graphical User Interface (GUI) manipulation, and animation and event handling principles within a desktop application environment.
+Feixe de Radar Rotativo: Um feixe verde gira continuamente, simulando a varredura do sonar.
 
-##  Features
+Anéis Concêntricos: Representam as diferentes distâncias do radar, aumentando a percepção de profundidade.
 
-* **Animated Radar Display:** A green beam continuously rotates, simulating the radar scan.
-* **Graphical Elements:** Concentric circles and dividing lines in green on a black background, recreating the classic radar aesthetic.
-* **Immersive Full-Screen:** The radar is displayed in full-screen mode without borders for an immersive experience.
+Fundo Escuro: Recria a ambientação escura de uma tela de radar submarina.
 
-## Technologies Used
+Modo Tela Cheia: A janela abre maximizada e sem bordas para uma experiência imersiva.
 
-* **Java Development Kit (JDK)**
-* **Java Swing:** For building the graphical user interface.
-* **Java AWT (Abstract Window Toolkit):** For 2D drawing operations and graphics manipulation.
-* **Eclipse IDE:** Integrated Development Environment used for development.
+Como Rodar
+Para executar este projeto, você precisará ter o Java Development Kit (JDK) instalado em sua máquina.
 
-##  How to Run the Project
+Pré-requisitos
+Java Development Kit (JDK) 11 ou superior
 
-To run the SUBMARINE Radar on your system:
+Passos para Compilação e Execução
+Salve o Código:
+Salve o código Java fornecido em um arquivo chamado SubmarinoRadar.java. Certifique-se de que este arquivo esteja dentro de uma pasta chamada submarino.
+Por exemplo, se a pasta do seu projeto for MeuProjeto, a estrutura de pastas deve ser:
 
-1.  **Prerequisites:**
-    * Ensure you have the **Java Development Kit (JDK)** (version 11 or higher is recommended) installed.
-    * Have **Eclipse IDE** configured for Java development.
+MeuProjeto/
+└── submarino/
+    └── SubmarinoRadar.java
 
-2.  **Eclipse Setup:**
-    * **Create a new Java Project:**
-        * In Eclipse, go to `File > New > Java Project`.
-        * Name the project (e.g., `RadarSubmarine` or `Portfolio`). Click `Finish`.
-    * **Create a new Package:**
-        * In the `Package Explorer`, right-click on the `src` folder of your new project.
-        * Go to `New > Package`.
-        * In the `Name` field, type `URSS_SUBMARINE` (this name must match the `package` declared in the code). Click `Finish`.
-    * **Create the SUBMARINE Class:**
-        * Right-click on the `URSS_SUBMARINE` package you just created.
-        * Go to `New > Class`.
-        * In the `Name` field, type `SUBMARINE` (with an uppercase 'S').
-        * Ensure the `Package` field is automatically filled with `URSS_SUBMARINE`.
-        * Click `Finish`.
-    * **Paste the Code:**
-        * Open the newly created `SUBMARINE.java` file.
-        * **Delete all content** that Eclipse automatically generated.
-        * **Paste the complete radar code** (including the `package URSS_SUBMARINE;` line at the top). The code is available below or in separate files.
+Abra o Terminal (ou Prompt de Comando):
+Navegue até a pasta MeuProjeto (o diretório que contém a pasta submarino).
 
-3.  **Execute:**
-    * Save the file (`Ctrl + S`).
-    * In the `Package Explorer`, right-click on the `SUBMARINE.java` file.
-    * Go to `Run As > Java Application`.
+Compile o Código:
+Execute o seguinte comando para compilar o arquivo Java:
 
-##  Lessons Learned and Challenges
+javac submarino/SubmarinoRadar.java
 
-This project was a journey of learning and overcoming common challenges in desktop Java development and environment configuration:
+Se a compilação for bem-sucedida, um arquivo SubmarinoRadar.class será gerado dentro da pasta submarino.
 
-* **Java Fundamentals:** Reinforced understanding of Object-Oriented Programming, inheritance (`extends JPanel`), interfaces (`implements ActionListener`), and multithreading concepts (with `SwingUtilities.invokeLater` and `Timer`).
-* **GUI Work (Swing/AWT):** Practical experience with components like `JFrame`, `JPanel`, and the 2D drawing API (`Graphics2D`).
-* **Event Handling:** Understanding the Swing event model and the use of `ActionListener` for animations.
-* **Environment Configuration:** Dealing with the strict relationship between `package` declarations in code and the file structure in the file system, a common challenge for beginners in Eclipse and Java Modules.
-* **Debugging:** The practice of identifying and resolving compilation and runtime errors, such as the `serialVersionUID` warning.
+Execute a Aplicação:
+Agora, execute o programa com o seguinte comando:
 
-##  Next Steps (Improvement Ideas)
+java submarino.SubmarinoRadar
 
-* Add "echoes" or trails to the radar beam for a more realistic visual effect.
-* Implement random targets (white/green dots) that appear and disappear.
-* Add "ping" sound effects.
-* Allow user interaction (e.g., resize the radar, change rotation speed).
-* Refactor the code to separate responsibilities (e.g., separate classes for the beam, for targets).
+Uma janela em tela cheia com a simulação do radar do submarino será exibida.
 
-##  About the Developer
+Tecnologias Utilizadas
+Java
 
-This project was developed as part of a career transition journey into the technology field. My previous experience in sectors such as **Occupational Safety (Construction), Logistics, Customer Service (McDonald's)**, and **Health Plan Benefits Processing** has provided me with a solid foundation in:
+Swing (API para GUI)
 
-* **Practical Problem Solving:** Addressing complex challenges and finding effective solutions in the field.
-* **Risk Management and Analysis:** Identifying vulnerabilities and implementing security measures.
-* **Process Optimization and Efficiency:** Thinking about workflows and continuous improvements.
-* **Adaptability and Resilience:** Moving between different environments and learning rapidly.
-* **Customer Service and Communication:** Understanding needs and interacting with diverse individuals.
+AWT (Abstract Window Toolkit)
 
-My passion for engineering and security has driven me into the world of programming. This Java Swing project reflects my commitment to learning and applying concepts, and my ability to use tools to overcome barriers and deliver results. I believe my diverse background makes me a professional with a unique perspective and a strong eagerness for continuous learning.
